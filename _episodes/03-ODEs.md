@@ -65,7 +65,7 @@ def dydt(y, t):
 y0 = 0.5
 
 ## Set times to solve for
-ts = np.linspace(0, 5, 100)
+ts = np.linspace(0, 10, 100)
 ~~~
 {: .language-python}
 
@@ -83,6 +83,8 @@ plt.plot(ts, ys)
 plt.show()
 ~~~
 {: .language-python}
+
+![Malthusian growth](../fig/03-Malthus.png "Malthusian growth")
 
 
 > ## Question
