@@ -1,15 +1,17 @@
 ---
 title: "Introduction"
-teaching: 0
+teaching: 0 # times
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "What is a differential equation?"
+- "Why is it useful?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understand what is modelling and why it is useful"
+- "Understand what is an initial condition problem"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Deterministic dynamics"
+- "Initial conditions"
 ---
 FIXME
 
 {% include links.md %}
-
