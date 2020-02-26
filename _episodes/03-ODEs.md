@@ -7,19 +7,10 @@ questions:
 objectives:
 - "Understand minimal ODE solving using Malthusian growth as an example"
 - "Understand parameters using the logistic growth model as an example"
-- "Understand ODE systems solvng using an epidemiological model"
 keypoints:
-- "Ordinary differential equations"
-- "Systems of ordinary differential equations"
+- "Ordinary differential equations without parameters"
+- "Ordinary differential equations with parameters"
 ---
-
-# Test
-
-Inline $ x^3 $ equation. Independent equation:
-
-$$
-\sin(\pi)
-$$
 
 # Prerequisites
 
@@ -43,9 +34,9 @@ from scipy.integrate import odeint
 >
 >`odeint` can easily solve initial value problems ordinary differential equations and systems or ordinary differential equations. The basic elements of such a problem are the following:
 >
-> - The dynamics (_dydt_), as a function of the state itself and of time (_y_, _t_).
-> - The initial sate (_y0_).
-> - The vector of times to simulate (_ts_).
+> - The dynamics $\frac{dy}{dt}$, as a function of the state itself and of time ($y$, $t$).
+> - The initial sate ($y_0$).
+> - The vector of times to simulate ($ts$).
 {: .callout}
 
 
@@ -54,11 +45,15 @@ from scipy.integrate import odeint
 ## Malthusian growth
 In 1798, Thomas Malthus published _An essay on the principle of population_. It contained one of the earliest (and also poorest) population growth models. In modern mathematical language, Malthus' model will read as: _the growth rate of a population is proportional to its size_. This can be easily translated to the differential equation:
 
-FIXME How can I use math expressions?
+$$
+\frac{dy}{dt} = r \cdot y
+$$
+
+where $y$ represents the population and $r$ the proportionality coefficient.
 
 ### Do it in Python
 
-The following code chunk defines the basic elements needed to solve the initial value problem:
+The following code chunk defines the basic elements needed to solve the initial value problem for $r = 0.1$:
 
 ~~~
 # Set initial value problem
@@ -110,8 +105,6 @@ plt.show()
 {: .challenge}
 
 ## Logistic growth
-
-# Kermack-McKendrick epidemiologic model
-
+FIXME
 
 {% include links.md %}
