@@ -76,7 +76,8 @@ ys = odeint(dydt, y0, ts)
 ~~~
 {: .language-python}
 
-The previous chunk generates a vector _ys_, whose values correspond to the states at the times given by the vector _ts_. It is always nice to visualize our solution:
+The previous chunk generates a vector _ys_, whose values correspond to the states at the times given by the vector _ts_.
+It is always nice to visualize our solution:
 ~~~
 # Plot solution
 plt.plot(ts, ys)
@@ -89,7 +90,9 @@ plt.show()
 
 > ## Question
 >
-> In a previous code chunk we defined the dynamics as a function of state (y) and time (t). Actually, the time is not being used in the body of the function. I am talking about this chunk:
+> In a previous code chunk we defined the dynamics as a function of state ($y$) and time ($t$).
+  Actually, the time is not being used in the body of the function.
+  I am talking about this chunk:
 > ~~~
 > def dydt(y, t):
 >    return 0.1*y
