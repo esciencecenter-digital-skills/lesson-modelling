@@ -38,7 +38,7 @@ In the animation below we can see a useful analogy. Here, the dynamical equation
 
 ![Machine](../fig/01-Machine.gif "Analogy with a machine")
 
-> ## Anatomy of an initial value problem
+> ## Initial value problem as a fortune-telling machine
 > Stop for a moment and identify the three elements given in the box "Anatomy of an initial value problem" in the animation above.
 {: .challenge}
 
