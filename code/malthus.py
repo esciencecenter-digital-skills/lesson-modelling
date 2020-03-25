@@ -12,7 +12,7 @@ def dydt(y, t):
 y0 = 0.5
 
 # Set times to solve for
-ts = np.linspace(0, 5, 100)
+ts = np.linspace(0, 10, 100)
 
 # Integrate numerically
 ys = odeint(dydt, y0, ts)
